@@ -92,8 +92,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top i {
   font-size: 28px;
-  color: #cda45e;
+  color: #c90027;
   line-height: 0;
+}
+
+.footer-info img {
+  max-height: 48px;
 }
 .back-to-top:hover {
   background: #cda45e;
@@ -106,6 +110,31 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
   opacity: 1;
 }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* .homecontent {
+  padding: 250px 0px 50px 0px;
+}
+
+.homecontent h1 {
+  text-align: center;
+  font-size: 75px;
+  font-weight: 600;
+  line-height: 55px;
+} */
+
+
+
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -217,11 +246,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .counts .content {
   padding: 30px 0;
+  
 }
 .counts .content h3 {
   font-weight: 700;
   font-size: 34px;
   color: #151515;
+
 }
 .counts .content p {
   margin-bottom: 0;
@@ -234,15 +265,18 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   font-size: 36px;
   color: #fff;
-  float: left;
+  /* float: left; */
+  text-align: center;
+
 }
 .counts .content .count-box span {
-  font-size: 36px;
-  line-height: 30px;
+  font-size: 50px;
+  line-height: 50px;
   display: block;
   font-weight: 700;
   color: #fff;
   margin-left: 50px;
+  text-align: center;
 }
 .counts .content .count-box p {
   padding: 15px 0 0 0;
@@ -250,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   color: #fff;
+  text-align: center;
 }
 .counts .content .count-box a {
   font-weight: 600;
@@ -688,6 +723,38 @@ section {
   color: #C90027;
 }
 
+
+
+.section-title-umbrella{
+  padding-bottom: 40px;
+}
+
+.section-title-umbrella h2{
+  font-size: 14px;
+font-weight: 500;
+padding: 0;
+line-height: 1px;
+margin: 0 0 5px 0;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #aaaaaa;
+font-family: "Poppins", sans-serif;
+text-align: left;
+}
+
+.about .umbrella-content h3, .about .umbrella-content p, .about .umbrella-content ul li {
+  text-align: left;
+}
+
+.section-title-umbrella h2::after{
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 4px 10px; 
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -737,12 +804,27 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about {
+/* .about {
   background: url("../img/citizenimgone.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
+} */
+
+.box{
+  height: 275px;
 }
+
+.about h3, .about p, .about ul li {
+  text-align: center;
+}
+
+.about{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .about:before {
   content: "";
   background: rgba(0, 0, 0, 0.4);
@@ -755,6 +837,7 @@ section {
 .about .about-img {
   position: relative;
   transition: 0.5s;
+  text-align: center;
 }
 .about .about-img img {
   max-width: 100%;
@@ -824,6 +907,44 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+.manufactures .manufacture-box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background: #1a1814;
+  text-align: center;
+}
+.manufactures .manufacture-box span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #C90027;
+  text-decoration: underline;
+}
+.manufactures .manufacture-box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.manufactures .manufacture-box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+.manufactures .manufacture-box:hover {
+  /* background: #fff;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  color: #000; */
+}
+.manufactures .manufacture-box:hover span, .manufactures .manufacture-box:hover h4, .why-us .manufacture-box:hover p {
+  /* color: #000;
+  transition:all ease-in-out 0.5s; */
+}
+
 .why-us .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -997,12 +1118,12 @@ section {
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
-.events {
+/* .events {
   background: url(../img/events-bg.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
-}
-.events::before {
+} */
+/* .events::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -1010,7 +1131,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-}
+} */
 .events .section-title h2 {
   color: #fff;
 }
