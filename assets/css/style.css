@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -133,7 +133,32 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 55px;
 } */
 
+/* header {
+   background: url(image.jpg);
+   height: 100vh;
+   margin-bottom: 2rem;
+   background-size: cover;
+} */
 
+body {
+  margin: 0;
+}
+
+video {
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 35%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  color: #fff;
+}
 
 
 /*--------------------------------------------------------------
@@ -501,7 +526,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background: url(https://citizenbags.in/wp-content/uploads/2020/03/slider-citizen-left-01-min-scaled.jpg) top center;
   background-size: cover;
   position: relative;
@@ -536,9 +561,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #C90027;
 }
 #hero h2 {
-  color: #eee;
-  margin-bottom: 10px 0 0 0;
-  font-size: 22px;
+  color: #fff !important;
+  /* margin-bottom: 10px 0 0 0; */
+  font-size: 36px;
+  font-weight: bold;
 }
 #hero .btns {
   margin-top: 30px;
@@ -688,9 +714,9 @@ section {
   overflow: hidden;
 }
 
-.section-bg {
+/* .section-bg {
   background-color: #1a1814;
-}
+} */
 
 .section-title {
   padding-bottom: 40px;
@@ -827,7 +853,7 @@ text-align: left;
 
 .about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.4); */
   position: absolute;
   bottom: 0;
   top: 0;
