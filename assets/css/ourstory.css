@@ -38,7 +38,7 @@ body {
   width: 4px;
   background: #c90027;
   left: 50%;
-  top: 20px;
+  top: -5px;
   transform: translateX(-50%);
 }
 .wrapper .row {
@@ -51,13 +51,12 @@ body {
   justify-content: flex-end;
 }
 .wrapper .row section {
-  background: #fff;
   border-radius: 5px;
   width: calc(50% - 40px);
-  padding: 20px;
+  padding: 30px 10px; 
   position: relative;
 }
-.wrapper .row section::before {
+/* .wrapper .row section::before {
   position: absolute;
   content: "";
   height: 15px;
@@ -66,7 +65,7 @@ body {
   top: 28px;
   z-index: -1;
   transform: rotate(45deg);
-}
+} */
 .row-1 section::before {
   right: -7px;
 }
@@ -77,8 +76,8 @@ body {
 .center-line .scroll-icon {
   position: absolute;
   background: #c90027;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
@@ -95,11 +94,11 @@ body {
 }
 .row-1 section .icon {
   top: 15px;
-  right: -60px;
+  right: -55px;
 }
 .row-2 section .icon {
   top: 15px;
-  left: -60px;
+  left: -55px;
 }
 .row section .details,
 .row section .bottom {
@@ -108,7 +107,7 @@ body {
   justify-content: space-between;
 }
 .row section .details .title {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 600;
   color: #c90027;
 }
@@ -127,6 +126,14 @@ body {
 }
 .row section .bottom a:hover {
   transform: scale(0.97);
+}
+
+.product-boxes {
+  min-height: 240px;
+}
+
+.manufacture-box {
+  height: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -214,6 +221,11 @@ body {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+main {
+   background-image: url(https://citizenbags.in/wp-content/uploads/2020/03/timeline-back-photo-revised-01-min.jpg) !important;
+   background-size: cover;
+   background-repeat: no-repeat
+ }
 #header {
    background: rgba(12, 11, 9, 0.9);
    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
@@ -435,6 +447,19 @@ body {
  .navbar-mobile .dropdown > .dropdown-active {
    display: block;
  }
+
+ .wrapper p {
+   color: #fff;
+ }
+
+ .row-1  p{
+   text-align: right;
+ }
+
+ .row-1 .details span {
+  width: 500px;
+  text-align: right;
+} 
  
  
 
