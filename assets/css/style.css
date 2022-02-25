@@ -21,12 +21,12 @@ body {
 }
 
 a {
-  color: #cda45e;
+  color: #c90027;
   text-decoration: none;
 }
 
 a:hover {
-  color: #d9ba85;
+  color: #c90027;
   text-decoration: none;
 }
 
@@ -150,7 +150,18 @@ body {
   margin: 0;
 }
 
-video {
+/* video {
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+} */
+
+.raincoat-video{
+  width: 30vw;
+  height: 80vh;
+}
+
+.home-video{
   min-width: 100vw;
   min-height: 100vh;
   object-fit: cover;
@@ -364,6 +375,15 @@ video {
   list-style: none;
   align-items: center;
 }
+
+.manufactures .manufacture-box:hover{
+
+  transform: translateY(-15px);
+}
+
+
+
+
 .navbar li {
   position: relative;
 }
@@ -376,6 +396,7 @@ video {
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
+  font-weight: 700;
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
@@ -384,7 +405,7 @@ video {
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #C90027;
-  font-weight: bold;
+  font-weight: 700;
 }
 .navbar .dropdown ul {
   display: block;
@@ -495,7 +516,7 @@ video {
   color: #1a1814;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #cda45e;
+  color: #c90027;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -588,9 +609,9 @@ video {
   min-height: 240px;
 }
 
-.product-boxes:hover{
+/* .product-boxes:hover{
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
+} */
 
 
 .manufacture-box {
@@ -1045,7 +1066,7 @@ background-color: #fff;
 .manufactures .manufacture-box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.6s;
   background: #1a1814;
   text-align: center;
 }
@@ -1675,7 +1696,7 @@ background-color: #fff;
 .contact .php-email-form textarea {
   padding: 10px 12px;
 }
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form-button button[type=submit] {
   background: #C90027;
   border: 0;
   padding: 10px 35px;
@@ -1752,7 +1773,7 @@ background-color: #fff;
   transition: 0.3s;
 }
 #footer .footer-top .social-links a:hover {
-  background: #cda45e;
+  background: #C90027;
   color: #fff;
   text-decoration: none;
 }
@@ -1792,7 +1813,7 @@ background-color: #fff;
   line-height: 1;
 }
 #footer .footer-top .footer-links ul a:hover {
-  color: #cda45e;
+  color: #c90027;
 }
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
