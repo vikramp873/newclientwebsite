@@ -102,6 +102,31 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 
+.back-to-top-two{
+position: fixed;
+visibility: hidden;
+opacity: 0;
+left: 15px;
+bottom: 15px;
+z-index: 996;
+width: 44px;
+height: 44px;
+border-radius: 50px;
+transition: all 0.4s;
+border: 2px solid #cda45e;
+}
+
+.back-to-top-two i {
+  font-size: 28px;
+  color: greenyellow;
+  line-height: 0;
+}
+
+.back-to-top-two.active {
+ visibility: visible;
+ opacity: 1;
+}
+
 .footer-info img {
   max-height: 48px;
 }
@@ -156,9 +181,11 @@ body {
   object-fit: cover;
 } */
 
-.raincoat-video{
+.raincoat-video {
   width: 30vw;
-  height: 80vh;
+  height: 83vh;
+  margin: 0 auto;
+  object-fit: unset;
 }
 
 .home-video{
@@ -1866,6 +1893,14 @@ background-color: #fff;
     margin-left: 0px;
   
   }
+
+  .raincoat-video {
+    width: 70vw;
+    height: 83vh;
+    margin: 0 auto;
+    object-fit: scale-down;
+  }
+  
   .counts .content .count-box p {
   
     margin: 0 0 0 0px;
