@@ -142,7 +142,7 @@
     <!-- End Hero -->
 
     <main id="main">
-      <section id="about" class="about">
+      <section id="about" class="about about-umbrella">
         <div class="container" data-aos="fade-up">
           <div class="section-title-umbrella">
             <h2>2 Fold umbrella</h2>
@@ -150,33 +150,53 @@
           </div>
           <div class="row">
             <div
-              class="col-lg-4 order-1"
-              data-aos="zoom-in"
-              data-aos-delay="100"
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
             >
-              <div class="about-img">
-                <img src="assets/img/twofold.jpeg" alt="" />
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/img/twofoldumbrellaone.jpeg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/img/twofoldumbrellatwo.jpeg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
               </div>
-            </div>
-            <div
-              class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 content umbrella-content align-items-start"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="about-img">
-                <img src="assets/img/twofold.jpeg" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-4 pt-4 pt-lg-0 content umbrella-content align-items-start"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="about-img">
-                <img src="assets/img/twofold.jpeg" alt="" />
-              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
+
           <div class="section-title-umbrella mt-5">
             <h2>Piano Umbrella</h2>
             <!-- <p>World Largest Manufactures of Umbrellas</p> -->
@@ -216,8 +236,8 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <div class="about-img">
-                <img src="assets/img/straightumbrella.jpeg" alt="" />
+              <div class="about-img-straight">
+                <img src="assets/img/straightumbrellaone.png" alt="" />
               </div>
             </div>
             <div
@@ -225,8 +245,8 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <div class="about-img">
-                <img src="assets/img/straightumbrella.jpeg" alt="" />
+              <div class="about-img-straight">
+                <img src="assets/img/straightumbrellatwo.png" alt="" />
               </div>
             </div>
             <div
@@ -234,8 +254,8 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <div class="about-img">
-                <img src="assets/img/straightumbrella.jpeg" alt="" />
+              <div class="about-img-straight">
+                <img src="assets/img/straightumbrellathree.png" alt="" />
               </div>
             </div>
           </div>
