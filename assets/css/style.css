@@ -1112,7 +1112,8 @@ min-height: 130px;
   max-width: 100%;
   border: 4px solid #fff;
   position: relative;
-  min-height: 350px;
+  max-height: 350px;
+  min-width: 85%;
 }
 .about .about-img-straight img {
   max-width: 100%;
@@ -1122,6 +1123,16 @@ min-height: 130px;
 }
 
 .about .about-img-piano:hover {
+  transform: scale(1.03);
+}
+.about .about-img-piano-two img {
+  max-width: 100%;
+  border: 4px solid #fff;
+  position: relative;
+  min-height: 350px;
+}
+
+.about .about-img-piano-two:hover {
   transform: scale(1.03);
 }
 .about .about-img-straight:hover {
@@ -1548,5 +1559,9 @@ background-color: #fff;
 
   .contact-box{
     padding: 10px;
+  }
+
+  .about .about-img-piano img{
+    min-width: 100%;
   }
 }
